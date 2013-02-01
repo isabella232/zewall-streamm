@@ -1,0 +1,252 @@
+/*
+    Copyright Arnaud Morin <arnaud1.morin@orange.com>
+   
+    This file is part of Zewall by Orange.
+
+    This script is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 2 of the License, or
+    (at your option) any later version.
+
+    This script is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this script.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+/* GENERALS */
+body{
+    background-color: #000;
+    font-family: helvetica;
+    color: #fff;
+}
+
+@font-face
+{
+    font-family: neogreymedium;
+    src: url('NeogreyMedium.otf');
+} 
+
+
+/* Main Page */
+.main_frame{
+    width: 950px;
+    position: relative;
+    margin: auto;
+}
+
+.header{
+	/* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, bottom, top, from(#000000), color-stop(0.25, #4A4A4A), to(#4A4A4A));
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(bottom, #000000, #4A4A4A 200px);
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(bottom, #000000, #4A4A4A 200px);
+	/* IE 10 */ background: -ms-linear-gradient(bottom, #000000, #4A4A4A 200px);
+	/* Opera 11.10+ */ background: -o-linear-gradient(bottom, #000000, #4A4A4A 200px);
+    width: 100%;
+    height: 80px;
+    font-family: neogreymedium;
+    font-size: 250%;
+    margin: 10px;
+}
+
+.header div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header_logo{
+    background-image: url("../images/logo_ZEWALL_blanc.png");
+    background-size: 70px auto;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.header_title{
+    display: inline-block;
+    margin: 10px;
+}
+
+.header_selector{
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+    text-align: right;
+    font-size: 80%;
+}
+
+.main_content{
+    /* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(radial, center, top, from(#4A4A4A), color-stop(0.5, #000000), to(#000000));
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-radial-gradient(center, #4A4A4A, #000000 500px);
+	/* Firefox 3.6+ */ background: -moz-radial-gradient(center, #4A4A4A, #000000 500px);
+	/* IE 10 */ background: -ms-radial-gradient(bottom, #4A4A4A, #000000 500px);
+	/* Opera 11.10+ */ background: -o-radial-gradient(bottom, #4A4A4A, #000000 500px);
+    width: 100%;
+    margin: 10px;
+}
+
+.footer{
+    
+    /* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, bottom, top, from(#000000), color-stop(0.25, #4A4A4A), to(#4A4A4A));
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(bottom, #000000, #4A4A4A 200px);
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(bottom, #000000, #4A4A4A 200px);
+	/* IE 10 */ background: -ms-linear-gradient(bottom, #000000, #4A4A4A 200px);
+	/* Opera 11.10+ */ background: -o-linear-gradient(bottom, #000000, #4A4A4A 200px);
+    width: 100%;
+    height: 40px;
+    font-family: neogreymedium;
+}
+
+.footer_text{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.footer_logo{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    vertical-align: middle;
+    background-image: url("../images/orange_logo.gif");
+    background-size: 35px auto;
+    background-repeat: no-repeat;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* VIGNETTES */
+
+.vignettes{
+    width: 100%;
+    height: 132px;
+}
+
+.vignettes_scroller{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.vignettes_scroller div{
+    display: inline-block;
+}
+
+.vignettes_video{
+    text-align: center;
+}
+
+.vignettes_video div{
+    display: inline-block;
+    position: relative;
+}
+
+.point_orange{
+    background-image: url("../images/point_orange.png");
+    background-size: 10px auto;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+
+.point_gris{
+    background-image: url("../images/point_gris.png");
+    background-size: 10px auto;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+
+/* VIDEO */
+.video_container{
+    display: inline-block;
+    vertical-align: middle;
+    width: 480px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    height: 340px;
+}
+
+.video-1 {
+    position:relative;
+    top:0px;
+}
+
+.video-2 {
+    top:-360px; /* HACK */
+    position:relative;
+    visibility: hidden;
+}
+
+.video-vignette-1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.video-vignette-2{
+    margin: 0px;
+    padding: 0px;
+    left: -180px; /* HACK */
+    visibility: hidden; /* video 2 vignette is hidden at beginning */
+}
+
+.video_player{
+
+}
+
+.video_title{
+
+}
+
+
+/* MAP */
+.map_container{
+    display: inline-block;
+    vertical-align: middle;
+    width: 360px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.map_map{
+    width: 100%;
+    height: 300px;
+}
+
+.map_video_info{
+
+}
+
+.map_comments{
+
+}
+
+
+/* LOGS */
+#log{
+    position: absolute; 
+    left: 5px; 
+    top: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* HACKS */
+.vjs-remaining-time-display{
+    display: none;
+}
