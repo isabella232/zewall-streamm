@@ -1,23 +1,11 @@
-README
+# Stream M for Zewall
 
-======
+## COMPILING
+```bash
+$ export LC_MESSAGES=en_US
 
-
-
-
-
-Stream M
-
-
-
-COMPILING
-
-=========
-
-$> export LC_MESSAGES=en_US
-
-$> ant
-
+$ ant
+```
 
 
 
